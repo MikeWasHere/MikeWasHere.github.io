@@ -1,0 +1,651 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+small {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+  text-align: center;
+}
+
+/*section {
+  height: 100vh;
+}*/
+
+/* NAVIGATION */
+nav {
+  width: 100%;
+  background: #000;
+  padding: 0;
+
+}
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+/* SHIFT */
+nav.shift {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #441313;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #bf3a34;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+
+/*
+  GENERIC STYLING
+*/
+h1, h2, h3, h4, .red-btn, input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img-container > img {
+  width: 100%;
+}
+
+a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.red-btn {
+  background-color: #bf3a34;
+  color: white;
+  text-transform: capitalize;
+  padding: 15px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.red-btn:hover {
+  background-color: #8c2929;
+}
+
+
+/***********************
+
+  TOP BANNER
+
+***********************/
+.top-banner {
+  background: url('../images/fh-skyline.jpg') no-repeat;
+  background-size: 100%;
+  padding: 150px 0px;
+}
+
+.top-banner > h1 {
+  width: 80%;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.top-banner > h1 > span {
+  color: white;
+}
+
+.corner-img-container {
+  width: 80px;
+  position: absolute;
+  right: 100px;
+  top: 180px;
+}
+
+.corner-img-container > img {
+  width: 100%;
+}
+
+
+/***********************
+
+  ABOUT US SECTION 
+
+***********************/
+.about-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.about-us-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.about-us-content > p {
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
+.about-us > .img-container {
+  width: 45%;
+}
+
+/***********************
+
+  TRAINER CONTAINER
+
+***********************/
+.trainer-container {
+  background: url('../images/trainer-banner.png') repeat-x top;
+  padding: 150px 0;
+  width: 100%;
+}
+
+.black-box {
+  background-color: black;
+  width: 65%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.black-box > h2 {
+  color: white;
+  text-transform: uppercase;
+  transform:translateY(-35px) translateX(-11.5%);
+
+}
+
+.img-and-content {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 15px auto;
+}
+
+.img {
+  width: 300px;
+}
+
+.img > img {
+  width: 100%;
+}
+
+.trainer-bio {
+  width: 45%;
+  transform: translatey(-12px);
+  height: 432px;
+  overflow-y: scroll;
+}
+
+.trainer-bio > h2 {
+  color: #bf3a34;
+  font-size: 2.3em;
+  margin-top: 0px;
+}
+
+.trainer-bio > h3, .trainer-bio > p {
+  color: white;
+}
+
+.trainer-bio > p {
+  line-height: 1.7;
+}
+
+/***********************
+
+  CLASSES CONTAINER
+
+***********************/
+.class-container {
+  background: url('../images/trainer-banner.png') repeat-x top;
+  padding: 150px 0;
+  width: 100%;
+}
+
+.class-container > h2 {
+  width: 80%;
+  margin: 0 auto;
+  transform: translateY(-40px);
+  color: white;
+}
+
+.classes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.one-of-three {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 33.333%;
+}
+
+.one-of-three > .img-container {
+  background-color: #333333;
+  width: 100%;
+  height: 372px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.one-of-three > .img-container > img {
+  width: 150px;
+  height: 150px;
+}
+
+.class-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 372px;
+  padding: 0 20px;
+}
+
+.arrow-up {
+  position: absolute;
+  transform: translate(-150px, -195px);
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid white;
+}
+
+.arrow-right {
+  position: absolute;
+  transform: translate(288px, 95px);
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid white;
+}
+
+.arrow-left {
+  position: absolute;
+  transform: translate(-285px, -100px);
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid white;
+}
+
+.class-info > h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #bf3a34;
+  margin: 0px;
+}
+
+.class-info > p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.3em;
+}
+
+/***********************
+
+  LOCARTIONS SECTION
+
+***********************/
+.location-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.location-container > h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/*
+  CAROUSEL CODE
+*/
+.slick-prev:before, .slick-next:before, .slick-dots li.slick-active button:before {
+  color: #bf3a34;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.img-content > img {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #bf3a34;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text > h3 {
+  font-size: 2em;
+}
+/*
+  CAROUSEL CODE END
+*/
+
+/***********************
+
+CONTACT US
+
+***********************/
+.contact-us {
+  background: url('../images/fithaus-collage.jpg');
+  padding-top: 300px;
+  margin-top: 100px;
+}
+
+.contact-us-black-box {
+  background-color: black;
+  border-top: 10px #bf3a34 solid;
+  width: 100%;
+}
+
+.black-fithaus {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us-form {
+  background-color: white;
+  width: 550px;
+  padding: 0 0 50px 0;
+}
+
+.fithaus-info > img {
+  width: 20%;
+}
+
+.fithaus-info > p {
+  color: white;
+  text-align: right;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.contact-us-form {
+  transform: translateY(-100px);
+}
+
+.contact-us-form > h2 {
+  color: #bf3a34;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-us-form > form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px black solid;
+}
+
+.contact-us-form > form > input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+}
+
+.contact-us-form > form > .half-row {
+  width: 45%;
+}
+
+.contact-us-form > form > .full-row {
+  width: 100%;
+}
+
+.contact-us-form > form > a {
+  width: 30%;
+  margin: 30px auto 0 auto;
+  text-align: center;
+}
+
+.title-info > h4, .title-info > a {
+  color: white;
+}
+
+.fithaus-info, .contact-info {
+  width: 300px;
+}
+
+.fithaus-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info > .info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info > img {
+  margin-right: 10px; 
+  width: 30px;
+}
+
+.title-info > h4 {
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
+
+.title-info > a {
+  text-decoration: none;
+  color: gray;
+}
+
+.title-info > a:hover {
+  color: #bf3a34;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  margin-top: -60px;
+  padding-bottom: 30px;
+}
+
+footer > p {
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+footer > p > span {
+  color: #bf3a34;
+}
+
+
+
+@media screen and (min-width: 1680px) {
+  .classes {
+    width: 1680px;
+  }
+}
