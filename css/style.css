@@ -654,3 +654,12 @@ footer > p > span {
     width: 1680px;
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .arrow-left {
+    transform: translate(-250px, -100px);
+  }
+  .arrow-right {
+    transform: translate(250px, 95px);
+  }
+}
