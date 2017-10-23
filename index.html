@@ -17,29 +17,29 @@
 	<script src="js/main.js"></script>
 
 </head>
-<body>
-	<section style="background: #000; color: rgba(0, 0, 0, 0.5);">
+<body id="home">
+	<section style="background: #000; color: rgba(0, 0, 0, 0.5); position: fixed; width: 100%; z-index: 999;">
 	  <nav class="shift">
-	  	<a href=""><img src="images/fithaus-logo.png" alt="Fithaus logo"></a>
-	    <ul>
-	      <li><a href="#">Home</a></li>
-	      <li><a href="#">About</a></li>
-	      <li><a href="#">Trainers</a></li>
-	      <li><a href="#">Classes</a></li>
-	      <li><a href="#">Location</a></li>
-	      <li><a href="#">Contact</a></li>
+	  	<a href="#home"><img src="images/fithaus-logo.png" alt="Fithaus logo"></a>
+	    <ul class="scroll-nav">
+	      <!-- <li><a href="#home"><h2>Home</h2></a></li> -->
+	      <li><a href="#about"><h2>About</h2></a></li>
+	      <li><a href="#trainer"><h2>Trainers</h2></a></li>
+	      <li><a href="#classes"><h2>Classes</h2></a></li>
+	      <li><a href="#location"><h2>Location</h2></a></li>
+	      <li><a href="#contactus"><h2>Contact</h2></a></li>
 	    </ul>
 	  </nav>
 	</section>  
 	
 	<div class="top-banner">
-		<div class="corner-img-container">
+		<!-- <div class="corner-img-container">
 			<img src="images/corner.svg" alt="Corner image">
-		</div>
+		</div> -->
 		<h1>Where <span>Fitness</span>,<br> <span>Motivation</span>,<br> &#38; <span>Convenience</span><br> Meet</h1>
 	</div>
 
-	<div class="about-us">
+	<div id="about" class="about-us">
 		<div class="about-us-content">
 			<h2>About Us</h2>
 			<p>Our goal is to address the health and fitness needs of a buildings demographics to create a residential fitness amenity that provides a more affordable and convenient alternative to big box and corporate gym experiences. Our services include one-on- one personal training, group classes, customized meal plans and more.With 15 plus years of experience in the health and fitness industry, our team is comprised of motivated individuals who all bring different skill sets and knowledge to the table. We take a client focused, results driven approach to ensure each client is satisfied with their experience from start to finish,regardless of their goal.</p>
@@ -49,8 +49,8 @@
 			<img src="https://i.imgur.com/85wfu6a.jpg" alt="Fithaus Crew">
 		</div>
 	</div>
-	<div class="trainer-container">
-		<div class="black-box">
+	<div id="trainer" class="trainer-container">
+		<div class="black-box box-shadow">
 			<h2>Trainers</h2>
 			<div class="trainers-carousel">
 				<div class="trainers img-and-content">
@@ -138,7 +138,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="class-container">
+	<div id="classes" class="class-container">
 		<h2>Our classes</h2>
 		<div class="classes">
 			<div class="one-of-three">
@@ -170,7 +170,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="location-container">
+	<div id="location" class="location-container">
 		<h2>Locations</h2>
 		<div class="location-carousel">
 		  <div class="img-content container">
@@ -186,7 +186,7 @@
 		  <div>your content 3</div>
 		</div>
 	</div>
-	<div class="contact-us">
+	<div id="contactus" class="contact-us">
 		<div class="contact-us-black-box">
 			<div class="black-fithaus">
 				<div class="fithaus-info">
@@ -198,7 +198,7 @@
 						<a href=""></a>
 					</div>
 				</div>
-				<div class="contact-us-form">
+				<div class="contact-us-form box-shadow">
 					<h2>Contact us</h2>
 					<form action="">
 						<input type="text" class="half-row" placeholder="FIRST NAME">
@@ -229,6 +229,7 @@
 	</div>
 	<footer>
 		<p>2017 <span>Fithaus</span> All Rights Reserved.</p>
+
 	</footer>
 
 <!-- javascript -->
@@ -236,6 +237,7 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js" integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollNav.min.js"></script>
 
 </body>
 </html>

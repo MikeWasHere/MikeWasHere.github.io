@@ -45,4 +45,6 @@ $(document).ready(function(){
 		arrows: true,
 		cssEase: 'linear'
   	});
+
+  $('.scroll-nav').scrollNav();
 });
