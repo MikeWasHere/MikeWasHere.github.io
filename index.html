@@ -10,6 +10,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iziModal.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	
 	<!-- Javascript -->
@@ -43,7 +44,8 @@
 		<div class="about-us-content">
 			<h2>About Us</h2>
 			<p>Our goal is to address the health and fitness needs of a buildings demographics to create a residential fitness amenity that provides a more affordable and convenient alternative to big box and corporate gym experiences. Our services include one-on- one personal training, group classes, customized meal plans and more.With 15 plus years of experience in the health and fitness industry, our team is comprised of motivated individuals who all bring different skill sets and knowledge to the table. We take a client focused, results driven approach to ensure each client is satisfied with their experience from start to finish,regardless of their goal.</p>
-			<a href="" class="red-btn">Our Services</a>
+			<a href="" class="red-btn trigger">Our Services</a>
+
 		</div>
 		<div class="img-container">
 			<img src="https://i.imgur.com/85wfu6a.jpg" alt="Fithaus Crew">
@@ -147,7 +149,7 @@
 					<h3>One of one training</h3>
 					<div class="arrow-right"></div>
 					<p>Working one on one with a certified personal trainer. Includes customized fitness and nutritional plans tailored to reach your fitness goal.</p>
-					<a href="" class="red-btn">Learn More</a>
+					<a href="" class="red-btn modalTwo">Learn More</a>
 				</div>
 			</div>
 			<div class="one-of-three">
@@ -155,7 +157,7 @@
 					<h3>Sports Training</h3>
 					<div class="arrow-left"></div>
 					<p>Working one on one with a certified personal trainer. Includes customized fitness and nutritional plans tailored to reach your fitness goal.</p>
-					<a href="" class="red-btn">Learn More</a>
+					<a href="" class="red-btn modalThree">Learn More</a>
 				</div>
 				<div class="img-container"><img src="images/one-on-one.svg" alt="one on one icon"></div>
 			</div>
@@ -165,7 +167,7 @@
 					<h3>Group Classes</h3>
 					<div class="arrow-up"></div>
 					<p>Groups of 5 or more people led by one our certified fitness instructor. Group classes include boot camp, yoga, total body conditioing, ab class, butt class, upper body and lower body specific</p>
-					<a href="" class="red-btn">Learn More</a>
+					<a href="" class="red-btn modalFour">Learn More</a>
 				</div>
 			</div>
 		</div>
@@ -229,13 +231,68 @@
 	</div>
 	<footer>
 		<p>2017 <span>Fithaus</span> All Rights Reserved.</p>
-
 	</footer>
+
+	<!-- Modal structure -->
+	<div id="modal" class="full-size-modal">
+		<button data-izimodal-close="">Close</button>
+		<div class="full-content">
+		    <div class="half-content">
+		    	<img src="http://eaglestaekwondo.com/wp-content/uploads/2016/09/finess-unisex.jpg" alt="">
+		    </div>
+		    <div class="half-content">
+		    	<h2>Our Services</h2>
+		    	<p>Fithaus International was created to satisfy the need for a new, challenging and engaging approach to health and fitness amenities in residential enviroments with an understanding that healthy lifestyle habits start at home.</p>
+		    	<div class="choices">
+		    		<div class="choice">
+		    			<img src="http://via.placeholder.com/100x100" alt="">
+		    			<div class="choice-content">
+		    				<h3>Message Therapy</h3>
+		    				<p>Swedish and aromatherapy, deep tissue therapy, neuromuscular NMT, structural integration therapy, and medical massage.</p>
+		    			</div>
+		    		</div>
+		    		<div class="choice">
+		    			<img src="http://via.placeholder.com/100x100" alt="">
+		    			<div class="choice-content">
+		    				<h3>National Seminars</h3>
+		    				<p>Forums and live demonstration on food preparation and basic nutrition.</p>
+		    			</div>
+		    		</div>
+		    		<div class="choice">
+		    			<img src="http://via.placeholder.com/100x100" alt="">
+		    			<div class="choice-content">
+		    				<h3>Custom meal plans</h3>
+		    				<p>Fuled by Lush Meals Miami</p>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+	</div>
+
+	<!-- Modal structure -->
+	<div id="modalTwo" class="full-size-modal">
+	<button data-izimodal-close="">Close</button>
+	    <h2>One on One</h2>
+	</div>
+
+	<!-- Modal structure -->
+	<div id="modalThree" class="full-size-modal">
+	<button data-izimodal-close="">Close</button>
+	    <h2>Sports Training</h2>
+	</div>
+
+	<!-- Modal structure -->
+	<div id="modalFour" class="full-size-modal">
+	<button data-izimodal-close="">Close</button>
+	    <h2>Group Classes</h2>
+	</div>
 
 <!-- javascript -->
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js" integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4=" crossorigin="anonymous"></script>
+<script type='text/javascript' src="js/iziModal.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/jquery.scrollNav.min.js"></script>
 

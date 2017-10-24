@@ -183,7 +183,6 @@ a {
 .top-banner {
   background: url('../images/fh-skyline.jpg') no-repeat;
   background-size: 100%;
-  background-position: 100% 540%;
   padding: 150px 0px;
 }
 
@@ -659,6 +658,58 @@ footer > p > span {
 
 .box-shadow {
   box-shadow: 0 10px 20px rgba(0,0,0,1), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/*******************
+
+ MODAL STYLING
+
+ *******************/
+.full-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.half-content {
+  width: 45%;
+}
+
+.half-content > img {
+  width: 100%;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.choice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.choice > img {
+  border-radius: 50%;
+}
+
+.choice-content {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.choice-content > h3, .choice-content > p {
+  margin-top: 0px;
 }
 
 @media screen and (min-width: 1680px) {

@@ -47,4 +47,25 @@ $(document).ready(function(){
   	});
 
   $('.scroll-nav').scrollNav();
+
+  $(".full-size-modal").iziModal({
+    openFullscreen: true
+  });
+
+  $(document).on('click', '.trigger', function (event) {
+    event.preventDefault();
+    $('#modal').iziModal('open');
+  });
+  $(document).on('click', '.modalTwo', function (event) {
+    event.preventDefault();
+    $('#modalTwo').iziModal('open');
+  });
+  $(document).on('click', '.modalThree', function (event) {
+    event.preventDefault();
+    $('#modalThree').iziModal('open');
+  });
+  $(document).on('click', '.modalFour', function (event) {
+    event.preventDefault();
+    $('#modalFour').iziModal('open');
+  });
 });
