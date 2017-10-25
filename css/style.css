@@ -675,6 +675,22 @@ footer > p > span {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services {
+  width: 100%;
+}
+
+.services > .half-content {
+  width: 50%;
+  height: 100vh;
+}
+
+.services > .half-content:first-child {
+  width: 40%;
+  margin: 0 auto;
 }
 
 .half-content {
